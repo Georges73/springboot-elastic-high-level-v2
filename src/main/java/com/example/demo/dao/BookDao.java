@@ -45,8 +45,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Repository
 public class BookDao {
 
-	private final String INDEX = "bookdata";
-	private final String TYPE = "books";
+	private final String INDEX = "amazon_products";
+	private final String TYPE = "products";
 	private RestHighLevelClient restHighLevelClient;
 	private ObjectMapper objectMapper;
 

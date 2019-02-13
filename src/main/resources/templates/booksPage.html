@@ -9,9 +9,10 @@
     <thead>
         <tr>
             <th> Title </th>
-            <th> Author </th>
+            <th> Manufacturer </th>
             <th> Price </th>
-            <th> id </th>
+            <th> Description </th>
+            <th> Id </th>
         </tr>
     </thead>
     <tbody>
@@ -20,9 +21,10 @@
         </tr>
         <tr th:each="book : ${books}">
             <td><span th:text="${book.title}"> Title </span></td>
-            <td><span th:text="${book.author}"> Author </span></td>
+            <td><span th:text="${book.manufacturer}"> Manufacturer </span></td>
              <td><span th:text="${book.price}"> Price </span></td>
-               <!-- <td><span th:text="${book.id}"> Id </span></td>  -->
+               <td><span th:text="${book.description}"> Description </span></td>
+               <td><span th:text="${book.id}"> Id </span></td>  
         </tr>
     </tbody>
 </table>
